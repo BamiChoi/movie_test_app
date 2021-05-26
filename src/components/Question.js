@@ -1,14 +1,20 @@
 import PropTypes from "prop-types"
 
 
-function Question({image, title, choices}){
+function Question({image, title, choices, onClick}){
+    const handelOnChoice = (e) => {
+        onClick()
+        console.log(e.target.value)
+    }
     return (
         <div>
             <div>
-                <img src={image}></img>
+                <img src={image} alt={title} title={title} />
             </div>
             <h1>{title}</h1>
-            {choices.map((choice, index) => <button key={index} >{choice}</button>)}
+            <form>
+                {choices.map((choice, index) => <button key={index} value={index} onClick={handelOnChoice}>{choice}</button>)}
+            </form>
         </div>
     )
 }
