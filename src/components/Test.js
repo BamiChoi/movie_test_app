@@ -21,7 +21,7 @@ function Test({type, movie, image, title, choices, onClick}){
     else{
         return (
             <div>
-                <h1>테스트 종료</h1>
+                <h1>당신의 영화는,</h1>
                 <h2>{movie.title}</h2>
             </div>
             
