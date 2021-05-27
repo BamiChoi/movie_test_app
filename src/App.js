@@ -1,11 +1,14 @@
 import React from "react"
-import Question from "./components/Question"
+import Test from "./components/Test"
 import questions from "./components/Questions"
+import movies from "./components/Movies"
 
 class App extends React.Component {
   state = {
     type : 0,
     question: {},
+    testCode: "0",
+    movie: {},
   };
 
   //현재 this.statetype을 바탕으로 질문가져와서 this.state.question에 저장
@@ -17,6 +20,12 @@ class App extends React.Component {
     return question
   } 
 
+  // test후 testCode의 값과 동일한 resultCode를 가진 영화 object를 Movies에서 찾아 state에 저장  
+  pickMovie = (testCode) => {
+    const movie = movies.find( ({ resultCode }) => resultCode === `${testCode}`)
+    return movie
+  }
+
   //컴포넌트가 첫 render를 실행하기전에 pickQuestion함수실행으로 question 오브젝트 저장
   constructor(props){
     super(props)
@@ -25,35 +34,43 @@ class App extends React.Component {
     this.state.question = question 
     }
 
-  //Question 컴포넌트에서 click이 일어나면 실행할 이벤트
-  handleOnClick = () => {
+  //Question 컴포넌트에서 click이 일어나면 실행할 이벤트. type값이 4가되면 pickQuestion은 멈추고 pickMovie 실행
+  handleOnClick = (testCode) => {
+    if(this.state.type !== 4){
     this.setState(prevState => 
       { return {
         type: prevState.type + 1,
         question: this.pickQuestion(
           prevState.type + 1),
+        testCode : prevState.testCode + `${testCode}`
       }
   });
+} else {
+  this.setState(prevState =>
+    {return {
+      type: prevState.type + 1,
+      testCode : prevState.testCode + `${testCode}`,
+      movie : this.pickMovie(prevState.testCode + `${testCode}`)
+    }})
+    this.pickMovie()
 }
-
-  shouldComponentUpdate(nextState, nextProps){
-    return (this.state.type !== nextProps.type)
-  }
+}
 
   //state에 저장된 question 오브젝트를 바탕으로 props를 Question컴포넌트에 에 전달
   render(){
-    const { question } = this.state;
+    console.log(this.state.type, this.state.testCode)
+    const { type, question, movie} = this.state;
     return (
-      <Question 
+      <Test 
       key={question.id} 
+      type={type}
+      movie={movie}
       title={question.title} 
       image={question.image} 
       choices={question.choices}
       onClick={this.handleOnClick} />
-      )
-  }
+      )}    
 }
-
 
 
 export default App;
