@@ -1,5 +1,7 @@
 import React from "react"
 import Home from "./Home"
+import "./App.css"
+
 
 class App extends React.Component {
   state = {
@@ -11,13 +13,24 @@ class App extends React.Component {
   render(){
     const { start } = this.state;
     return (
-      <div>
+      <div className="container">
+        <div className="title">YOUR TODAY'S BOXOFFICE</div>
         {start === false ?
-        <div>
-          <h1>wanna start?</h1>
-          <button onClick={this.handleStart}>start</button>
+        <div className="starter">
+          <div className="description">
+            <span>현재 심리상태로 알아보는</span>
+            <span> 지금 나에게 딱 맞는 영화는?</span>
+          </div>
+          <div className="description_2">
+            <span>"잠시 영화 속 주인공이 되어</span>
+            <span> 오늘의 영화를 찾아보세요!"</span>
+          </div>
+          <div className="startButton">
+            <button onClick={this.handleStart}>start</button>
+          </div>
         </div>
         : (<Home />)}
+        
       </div>
     )}
 }

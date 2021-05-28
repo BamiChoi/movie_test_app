@@ -1,0 +1,64 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+.container {
+  width: 1000px;
+  max-width: fit-content;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  justify-content: center;
+  padding-top: 20px;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-bottom: 60px;
+  border-radius: 15px;
+}
+
+.title {
+  width: 800px;
+  color: white;
+  text-align: end;
+  font-size: 50px;
+  font-weight: 300;
+  padding-bottom: 20px;
+}
+
+.starter {
+  width: 800px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  border-radius: 15px;
+  background-image: url("https://image.tmdb.org/t/p/original/ajf1itK5ntGXEZvdrCChYCZDtP3.jpg");
+  background-size: 100%;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+  padding: 20px 20px 50px;
+}
+
+.description span {
+  margin-bottom: 10px;
+}
+
+.description_2 {
+  color: white;
+  font-size: 15px;
+  font-weight: 300;
+  padding: 0px 15px 200px;
+}
+
+.startButton {
+  padding-right: 15px;
+}
