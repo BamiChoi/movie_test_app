@@ -1,10 +1,11 @@
 import React from "react"
-import { library, icon } from "@fortawesome/fontawesome-svg-core"
-import { faCamera } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { library } from "@fortawesome/fontawesome-svg-core"
+import { fas } from "@fortawesome/free-solid-svg-icons"
 import Home from "./Home"
 import "./App.css"
 
-library.add(faCamera);
+library.add(fas);
 
 class App extends React.Component {
   state = {
@@ -29,7 +30,7 @@ class App extends React.Component {
             <span> 오늘의 영화를 찾아보세요!"</span>
           </div>
           <div className="startButton">
-            <button onClick={this.handleStart}>start</button>
+            <button onClick={this.handleStart}>start<FontAwesomeIcon icon={["fas", "coffee"]} /></button>
           </div>
         </div>
         : (<Home />)}
