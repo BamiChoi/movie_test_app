@@ -1,6 +1,5 @@
 import PropTypes from "prop-types"
 
-
 function Test({type, movie, image, title, choices, onClick}){
     if(type < 5){
         const handelOnChoice = (e) => {

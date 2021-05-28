@@ -1,7 +1,10 @@
 import React from "react"
+import { library, icon } from "@fortawesome/fontawesome-svg-core"
+import { faCamera } from "@fortawesome/free-solid-svg-icons"
 import Home from "./Home"
 import "./App.css"
 
+library.add(faCamera);
 
 class App extends React.Component {
   state = {
