@@ -3,18 +3,14 @@ body {
   justify-content: center;
 }
 .container {
-  width: 1000px;
-  max-width: fit-content;
-  height: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: black;
   justify-content: center;
-  padding-top: 20px;
-  padding-right: 50px;
-  padding-left: 50px;
-  padding-bottom: 60px;
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-bottom: 50px;
   border-radius: 15px;
 }
 
@@ -24,10 +20,11 @@ body {
   text-align: end;
   font-size: 50px;
   font-weight: 300;
-  padding-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 
-.starter {
+.startScreen {
   width: 800px;
   height: 450px;
   display: flex;
@@ -61,4 +58,12 @@ body {
 
 .startButton {
   padding-right: 15px;
+}
+
+.startButton div:last-child {
+  color: white;
+  cursor: Pointer;
+  font-size: 50px;
+  padding-right: 20px;
+  margin-bottom: 10px;
 }

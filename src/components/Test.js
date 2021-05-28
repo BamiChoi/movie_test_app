@@ -1,4 +1,5 @@
 import PropTypes from "prop-types"
+import "./Test.css"
 
 function Test({type, movie, image, title, choices, onClick}){
     if(type < 5){
@@ -6,15 +7,18 @@ function Test({type, movie, image, title, choices, onClick}){
             onClick(e.target.value)
         }
         return (
-            <div>
-                <div>
-                    <img src={image} alt={title} title={title} />
+                <div className="question_container">
+                    <div className="movieScene">
+                        <img src={image} alt={title} title={title} />
+                    </div>
+                    <div className="question">
+                        <span>scene#{type + 1}. {title}</span>
+                    </div>             
+                    <div className="choices">
+                     {choices.map((choice, index) => <div className="choice" key={index} value={index} onClick={handelOnChoice}>{choice}</div>)}
+                    </div>
                 </div>
-                <h1>{title}</h1>
-                <div>
-                    {choices.map((choice, index) => <button key={index} value={index} onClick={handelOnChoice}>{choice}</button>)}
-                </div>
-            </div>
+                
         )
     }
     else{

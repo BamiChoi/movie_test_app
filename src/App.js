@@ -20,7 +20,7 @@ class App extends React.Component {
       <div className="container">
         <div className="title">YOUR TODAY'S BOXOFFICE</div>
         {start === false ?
-        <div className="starter">
+        <div className="startScreen">
           <div className="description">
             <span>현재 심리상태로 알아보는</span>
             <span> 지금 나에게 딱 맞는 영화는?</span>
@@ -30,7 +30,7 @@ class App extends React.Component {
             <span> 오늘의 영화를 찾아보세요!"</span>
           </div>
           <div className="startButton">
-            <button onClick={this.handleStart}>start<FontAwesomeIcon icon={["fas", "coffee"]} /></button>
+            <div onClick={this.handleStart}>시작하기 <FontAwesomeIcon icon={["fas", "play"]} /></div>
           </div>
         </div>
         : (<Home />)}
