@@ -30,7 +30,7 @@ class App extends React.Component {
             <span> 오늘의 영화를 찾아보세요!"</span>
           </div>
           <div className="startButton">
-            <div onClick={this.handleStart}>시작하기 <FontAwesomeIcon icon={["fas", "play"]} /></div>
+            <div onClick={this.handleStart}>시작하기 <FontAwesomeIcon icon={["fas", "play"]}/></div>
           </div>
         </div>
         : (<Home />)}

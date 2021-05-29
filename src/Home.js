@@ -2,6 +2,7 @@ import React from "react"
 import Test from "./components/Test"
 import questions from "./components/Questions"
 import movies from "./components/Movies"
+import "./Home.css"
 
 class Home extends React.Component {
   state = {
@@ -68,12 +69,24 @@ componentDidUpdate(){
   //state에 저장된 question 오브젝트를 바탕으로 props를 Question컴포넌트에 에 전달
   render(){
     console.log(this.state)
-    const { type, question, movie, isLoading} = this.state;
+    const { type, question, movie, isLoading } = this.state;
     return (
         <div>
         {isLoading 
-            ? <div>
-              <h1>결과를 로딩중입니다...</h1>
+            ? <div className="loading_container">
+                <div className="loadingBar">
+                    <div className="emptyBar">
+                      <div className="chargeBar">
+                      </div>
+                      <span className="barText">L O A D I N G . . .</span>
+                    </div>
+                </div>
+                  <div className="loadingText">
+                    <span>티켓을 발권중입니다...</span>
+                  </div>
+                  <div className="loadingImage">
+                    <img className="popcorn" src="https://media4.giphy.com/media/Lpcaifsui3UMNbwiD1/giphy.gif?cid=ecf05e47olbrorhk5c54z0ym12uuoiuzh3ctydcv6bh6gp30&rid=giphy.gif&ct=s"/>
+                  </div>
               </div>
             : (<Test 
                 key={question.id} 
@@ -82,7 +95,7 @@ componentDidUpdate(){
                 title={question.title} 
                 image={question.image} 
                 choices={question.choices}
-                onClick={this.handleOnClick} />) 
+                onClick={this.handleOnClick}/>) 
             }
             </div>
       )}    

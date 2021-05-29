@@ -3,8 +3,9 @@ import "./Test.css"
 
 function Test({type, movie, image, title, choices, onClick}){
     if(type < 5){
-        const handelOnChoice = (e) => {
-            onClick(e.target.value)
+        const handleOnChoice = (e) => {
+            console.log(e.target.value)
+            onClick(e.target.value)   
         }
         return (
                 <div className="question_container">
@@ -15,7 +16,7 @@ function Test({type, movie, image, title, choices, onClick}){
                         <span>scene#{type + 1}. {title}</span>
                     </div>             
                     <div className="choices">
-                     {choices.map((choice, index) => <div className="choice" key={index} value={index} onClick={handelOnChoice}>{choice}</div>)}
+                     {choices.map((choice, index) => <button className="choice" key={index} value={index} onClick={handleOnChoice}>{choice}</button>)}
                     </div>
                 </div>
                 

@@ -39,35 +39,35 @@ const questions =[
         {
             id:0,
             title : "질문2-1",
-            image : "",
+            image : "https://storage.googleapis.com/cbmpress/uploads/sites/4/2017/05/totoro.jpg",
             choices :["선택1", "선택2", "선택3", "선택4"]
         },
 
         {
             id:1,
             title : "질문2-2",
-            img : "",
+            image : "https://storage.googleapis.com/cbmpress/uploads/sites/4/2017/05/totoro.jpg",
             choices :["선택1", "선택2", "선택3", "선택4"]
         },
 
         {
             id:2,
             title : "질문2-3",
-            img : "",
+            image : "https://storage.googleapis.com/cbmpress/uploads/sites/4/2017/05/totoro.jpg",
             choices :["선택1", "선택2", "선택3", "선택4"]
         },
 
         {
             id:3,
             title : "질문2-4",
-            img : "",
+            image : "https://storage.googleapis.com/cbmpress/uploads/sites/4/2017/05/totoro.jpg",
             choices :["선택1", "선택2", "선택3", "선택4"]
         },
 
         {
             id:4,
             title : "질문2-5",
-            img : "",
+            image : "https://storage.googleapis.com/cbmpress/uploads/sites/4/2017/05/totoro.jpg",
             choices :["선택1", "선택2", "선택3", "선택4"]
         }
     ],
@@ -75,35 +75,35 @@ const questions =[
         {
             id:0,
             title : "질문3-1",
-            image : "",
+            image : "https://storage.googleapis.com/cbmpress/uploads/sites/4/2017/05/totoro.jpg",
             choices :["선택1", "선택2", "선택3", "선택4"]
         },
 
         {
             id:1,
             title : "질문3-2",
-            img : "",
+            image : "https://storage.googleapis.com/cbmpress/uploads/sites/4/2017/05/totoro.jpg",
             choices :["선택1", "선택2", "선택3", "선택4"]
         },
 
         {
             id:2,
             title : "질문3-3",
-            img : "",
+            image : "https://storage.googleapis.com/cbmpress/uploads/sites/4/2017/05/totoro.jpg",
             choices :["선택1", "선택2", "선택3", "선택4"]
         },
 
         {
             id:3,
             title : "질문3-4",
-            img : "",
+            image : "https://storage.googleapis.com/cbmpress/uploads/sites/4/2017/05/totoro.jpg",
             choices :["선택1", "선택2", "선택3", "선택4"]
         },
 
         {
             id:4,
             title : "질문3-5",
-            img : "",
+            image : "https://storage.googleapis.com/cbmpress/uploads/sites/4/2017/05/totoro.jpg",
             choices :["선택1", "선택2", "선택3", "선택4"]
         }
     ],
@@ -111,35 +111,35 @@ const questions =[
         {
             id:0,
             title : "질문4-1",
-            image : "",
+            image : "https://storage.googleapis.com/cbmpress/uploads/sites/4/2017/05/totoro.jpg",
             choices :["선택1", "선택2", "선택3", "선택4"]
         },
 
         {
             id:1,
             title : "질문4-2",
-            img : "",
+            image : "https://storage.googleapis.com/cbmpress/uploads/sites/4/2017/05/totoro.jpg",
             choices :["선택1", "선택2", "선택3", "선택4"]
         },
 
         {
             id:2,
             title : "질문4-3",
-            img : "",
+            image : "https://storage.googleapis.com/cbmpress/uploads/sites/4/2017/05/totoro.jpg",
             choices :["선택1", "선택2", "선택3", "선택4"]
         },
 
         {
             id:3,
             title : "질문4-4",
-            img : "",
+            image : "https://storage.googleapis.com/cbmpress/uploads/sites/4/2017/05/totoro.jpg",
             choices :["선택1", "선택2", "선택3", "선택4"]
         },
 
         {
             id:4,
             title : "질문4-5",
-            img : "",
+            image : "https://storage.googleapis.com/cbmpress/uploads/sites/4/2017/05/totoro.jpg",
             choices :["선택1", "선택2", "선택3", "선택4"]
         }
     ],
@@ -147,35 +147,35 @@ const questions =[
         {
             id:0,
             title : "질문5-1",
-            image : "",
+            image : "https://storage.googleapis.com/cbmpress/uploads/sites/4/2017/05/totoro.jpg",
             choices :["선택1", "선택2", "선택3", "선택4"]
         },
 
         {
             id:1,
             title : "질문5-2",
-            img : "",
+            image : "https://storage.googleapis.com/cbmpress/uploads/sites/4/2017/05/totoro.jpg",
             choices :["선택1", "선택2", "선택3", "선택4"]
         },
 
         {
             id:2,
             title : "질문5-3",
-            img : "",
+            image : "https://storage.googleapis.com/cbmpress/uploads/sites/4/2017/05/totoro.jpg",
             choices :["선택1", "선택2", "선택3", "선택4"]
         },
 
         {
             id:3,
             title : "질문5-4",
-            img : "",
+            image : "https://storage.googleapis.com/cbmpress/uploads/sites/4/2017/05/totoro.jpg",
             choices :["선택1", "선택2", "선택3", "선택4"]
         },
 
         {
             id:4,
             title : "질문5-5",
-            img : "",
+            image : "https://storage.googleapis.com/cbmpress/uploads/sites/4/2017/05/totoro.jpg",
             choices :["선택1", "선택2", "선택3", "선택4"]
         }
     ],
