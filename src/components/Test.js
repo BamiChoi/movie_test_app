@@ -26,7 +26,7 @@ function Test({type, movie, image, title, choices, onClick}){
         return (
             <div className="result_container">
                 <div className="moviePoster">
-                    <img src="" />
+                    <img src="https://w.namu.la/s/3d05a85958eae3318f813157fa4b8d6bcd8dad23bbf043276c11a48097fa81ee20980d25731d811acf8ef2824bb5d0d6e75390536eec6771dfab45c6c855db535144b49220a24e9522f3473665b1cbae64ba9367f8bd8d742518cdd0b2f89759" />
                 </div>
                 <div className="movie">
                     <div className ="movieTitle">
@@ -39,13 +39,13 @@ function Test({type, movie, image, title, choices, onClick}){
                     </div>  
                     <div className="ticketInfo">
                         <div className="time">
-                            19:30
+                            <span>19:30</span>
                         </div>
                         <div className="theater">
-                            2관
+                            <span>2관</span>2
                         </div>
                         <div className="seat">
-                            H열 15번
+                             <span>H열 15번</span>
                         </div>
                     </div>   
                     <div className="payment">
