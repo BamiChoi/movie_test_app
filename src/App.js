@@ -17,7 +17,7 @@ class App extends React.Component {
   render(){
     const { start } = this.state;
     return (
-      <div className="container">
+      <div className ="container">
         <div className="title">YOUR TODAY'S BOXOFFICE</div>
         {start === false ?
         <div className="startScreen">
